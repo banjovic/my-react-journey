@@ -3,6 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './App.css';
+
+// function App() {
+//   const [counter, setCounter] = useState(0);
+//   useEffect(() => {
+//       const timer = setInterval(() => {
+//           setCounter(counter + 1);
+//       }, 300);
+//       return () => { clearInterval(timer); }
+//   });
+//   return (
+//       <div id="App">
+//           Counter: {counter}
+//       </div>
+//   );
+// }
+
 
 ReactDOM.render(
   <React.StrictMode>
