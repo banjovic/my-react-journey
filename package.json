@@ -18,7 +18,7 @@
       "React-app"
     ]
   },
-  "browserslist": {
+  "browsersList": {
     "production": [
       ">0.2%",
       "not dead",

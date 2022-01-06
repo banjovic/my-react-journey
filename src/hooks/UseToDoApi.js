@@ -16,7 +16,7 @@ export function useToDoApi(initialState = []) {
 
     useEffect(() => {
         loadTasksFromServerAsync();
-    });
+    }, []);
 
     return [tasks, saveChangesCallback];
 };
@@ -26,7 +26,7 @@ async function getItems() {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
-            "userid": "myuserid"
+            "userId": "myUserId"
         }
     });
 
@@ -40,7 +40,7 @@ async function saveItems(items) {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            "userid": "myuserid"
+            "userId": "myUserId"
         },
         body: data
     });
