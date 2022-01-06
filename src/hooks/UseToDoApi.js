@@ -16,7 +16,7 @@ export function useToDoApi(initialState = []) {
 
     useEffect(() => {
         loadTasksFromServerAsync();
-    });
+    }, []);
 
     return [tasks, saveChangesCallback];
 };
